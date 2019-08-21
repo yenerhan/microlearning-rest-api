@@ -19,7 +19,7 @@ spring:
     show-sql: true
 
 server:
-  port: 5000
+  port: 80
 
 log:
   file:
@@ -33,23 +33,18 @@ spring:
   application:
     name: microlearning
   datasource:
-    url:  ${RDS_URL}
-    username: ${RDS_USERNAME}
-    password: ${RDS_PASSWORD}
+    url:  jdbc:postgresql://52.15.236.131:5432/microlearning
+    username: power_user
+    password: 12345678
   jpa:
     hibernate:
-      ddl-auto: create # Hibernate ddl auto (create, create-drop, validate, update)
+      ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
 
 server:
-  port: 5000
+  port: 80
 
 log:
   file:
     path: ${user.home}/logs/${spring.application.name}
-
-amazon:
-  aws:
-    accesskey: ${ACCESS_KEY}
-    secretkey: ${SECRET_KEY}
