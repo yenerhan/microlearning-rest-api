@@ -9,9 +9,9 @@ spring:
   application:
     name: microlearning
   datasource:
-    url:  jdbc:postgresql://52.15.236.131:5432/microlearning
-    username: power_user
-    password: 12345678
+    url:  jdbc:postgresql://localhost:5432/microlearning
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
       ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)

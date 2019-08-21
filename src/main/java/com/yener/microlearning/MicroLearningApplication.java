@@ -11,7 +11,7 @@ import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFacto
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
-public class MicroLearningApplication extends SpringBootServletInitializer {
+public class MicroLearningApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MicroLearningApplication.class, args);
@@ -27,10 +27,5 @@ public class MicroLearningApplication extends SpringBootServletInitializer {
         Jackson2RepositoryPopulatorFactoryBean factoryBean = new Jackson2RepositoryPopulatorFactoryBean();
         factoryBean.setResources(new Resource[]{new ClassPathResource("project-init.json")});
         return factoryBean;
-    }
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
-        return app.sources(MicroLearningApplication.class);
     }
 }
