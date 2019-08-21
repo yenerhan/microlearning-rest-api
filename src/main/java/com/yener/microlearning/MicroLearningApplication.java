@@ -2,6 +2,8 @@ package com.yener.microlearning;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -9,7 +11,7 @@ import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFacto
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
-public class MicroLearningApplication {
+public class MicroLearningApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(MicroLearningApplication.class, args);
@@ -25,5 +27,10 @@ public class MicroLearningApplication {
         Jackson2RepositoryPopulatorFactoryBean factoryBean = new Jackson2RepositoryPopulatorFactoryBean();
         factoryBean.setResources(new Resource[]{new ClassPathResource("project-init.json")});
         return factoryBean;
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
+        return app.sources(MicroLearningApplication.class);
     }
 }
