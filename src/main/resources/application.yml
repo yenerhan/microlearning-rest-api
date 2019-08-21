@@ -1,0 +1,55 @@
+spring:
+  profiles:
+    active: dev
+
+#dev ayarları
+---
+spring:
+  profiles: dev
+  application:
+    name: microlearning
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/microlearning
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+server:
+  port: 5000
+
+log:
+  file:
+    path: ${user.home}/logs/${spring.application.name}
+
+#prod ayarları
+---
+
+spring:
+  profiles: prod
+  application:
+    name: microlearning
+  datasource:
+    url:  ${RDS_URL}
+    username: ${RDS_USERNAME}
+    password: ${RDS_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create # Hibernate ddl auto (create, create-drop, validate, update)
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+server:
+  port: 5000
+
+log:
+  file:
+    path: ${user.home}/logs/${spring.application.name}
+
+amazon:
+  aws:
+    accesskey: ${ACCESS_KEY}
+    secretkey: ${SECRET_KEY}

@@ -1,0 +1,28 @@
+[
+  {
+    "_class": "com.yener.microlearning.entity.Role",
+    "roleId": "1",
+    "roleName": "ROLE_ADMIN"
+  },
+  {
+    "_class": "com.yener.microlearning.entity.Role",
+    "roleId": "2",
+    "roleName": "ROLE_USER"
+  },
+  {
+    "_class": "com.yener.microlearning.entity.User",
+    "userId": "1",
+    "firstName": "admin",
+    "lastName": "admin",
+    "email": "admin@admin.com",
+    "encryptedPassword": "$2a$10$7/ghPZjZ967XJw26NxfqNeE6jSe1Wf5jLoWRH2.CULDBJCJxlhjKe",
+    "emailVerificationStatus": false,
+    "roles": [
+      {
+        "_class": "com.yener.microlearning.entity.Role",
+        "roleId": "1",
+        "roleName": "ROLE_ADMIN"
+      }
+    ]
+  }
+]

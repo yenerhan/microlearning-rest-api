@@ -1,0 +1,114 @@
+25-09-2018T17:17:35.365 [restartedMain] HAPPYPOINT CURRENT INFO   [StartupInfoLogger.java:48] - Starting HappypointApplication on hepe-242 with PID 6116 (C:\Users\erhan.yener\workspace-boot\happypoint\target\classes started by erhan.yener in C:\Users\erhan.yener\workspace-boot\happypoint)
+25-09-2018T17:17:35.366 [restartedMain] HAPPYPOINT CURRENT INFO   [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+25-09-2018T17:17:35.408 [restartedMain] HAPPYPOINT CURRENT INFO   [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d389c0: startup date [Tue Sep 25 17:17:35 EEST 2018]; root of context hierarchy
+25-09-2018T17:17:35.473 [background-preinit] HAPPYPOINT CURRENT INFO   [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+25-09-2018T17:17:36.855 [restartedMain] HAPPYPOINT CURRENT INFO   [PostProcessorRegistrationDelegate.java:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15e3bb0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-09-2018T17:17:37.139 [restartedMain] HAPPYPOINT CURRENT INFO   [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+25-09-2018T17:17:37.144 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Starting service [Tomcat]
+25-09-2018T17:17:37.145 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+25-09-2018T17:17:37.251 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+25-09-2018T17:17:37.251 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1846 ms
+25-09-2018T17:17:37.503 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'metricsFilter' to: [/*]
+25-09-2018T17:17:37.503 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+25-09-2018T17:17:37.503 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+25-09-2018T17:17:37.503 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+25-09-2018T17:17:37.503 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+25-09-2018T17:17:37.504 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+25-09-2018T17:17:37.504 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+25-09-2018T17:17:37.504 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+25-09-2018T17:17:37.504 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+25-09-2018T17:17:37.536 [restartedMain] HAPPYPOINT CURRENT WARN   [AbstractApplicationContext.java:551] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+25-09-2018T17:17:37.538 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Stopping service [Tomcat]
+25-09-2018T17:17:37.551 [restartedMain] HAPPYPOINT CURRENT INFO   [AutoConfigurationReportLoggingInitializer.java:101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+25-09-2018T17:17:37.555 [restartedMain] HAPPYPOINT CURRENT ERROR  [LoggingFailureAnalysisReporter.java:42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+02-10-2018T00:40:04.449 [restartedMain] HAPPYPOINT CURRENT INFO   [StartupInfoLogger.java:48] - Starting HappypointApplication on DESKTOP-HNQ0SEU with PID 11944 (E:\projeler\happypoint\target\classes started by User in E:\projeler\happypoint)
+02-10-2018T00:40:04.452 [restartedMain] HAPPYPOINT CURRENT INFO   [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+02-10-2018T00:40:04.603 [restartedMain] HAPPYPOINT CURRENT INFO   [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d9d6717: startup date [Tue Oct 02 00:40:04 EET 2018]; root of context hierarchy
+02-10-2018T00:40:05.002 [background-preinit] HAPPYPOINT CURRENT INFO   [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+02-10-2018T00:40:08.219 [restartedMain] HAPPYPOINT CURRENT INFO   [PostProcessorRegistrationDelegate.java:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$def9ef36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02-10-2018T00:40:09.050 [restartedMain] HAPPYPOINT CURRENT INFO   [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+02-10-2018T00:40:09.066 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Starting service [Tomcat]
+02-10-2018T00:40:09.068 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+02-10-2018T00:40:09.303 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+02-10-2018T00:40:09.304 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 4708 ms
+02-10-2018T00:40:09.852 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'metricsFilter' to: [/*]
+02-10-2018T00:40:09.853 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+02-10-2018T00:40:09.853 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+02-10-2018T00:40:09.853 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+02-10-2018T00:40:09.853 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+02-10-2018T00:40:09.854 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+02-10-2018T00:40:09.855 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+02-10-2018T00:40:09.855 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+02-10-2018T00:40:09.855 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+02-10-2018T00:40:09.929 [restartedMain] HAPPYPOINT CURRENT WARN   [AbstractApplicationContext.java:551] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+02-10-2018T00:40:09.934 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Stopping service [Tomcat]
+02-10-2018T00:40:09.974 [restartedMain] HAPPYPOINT CURRENT INFO   [AutoConfigurationReportLoggingInitializer.java:101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+02-10-2018T00:40:09.985 [restartedMain] HAPPYPOINT CURRENT ERROR  [LoggingFailureAnalysisReporter.java:42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+10-10-2018T17:05:54.642 [restartedMain] HAPPYPOINT CURRENT INFO   [StartupInfoLogger.java:48] - Starting HappypointApplication on hepe-242 with PID 14404 (C:\Users\erhan.yener\workspace-boot\happypoint\target\classes started by erhan.yener in C:\Users\erhan.yener\workspace-boot\happypoint)
+10-10-2018T17:05:54.650 [restartedMain] HAPPYPOINT CURRENT INFO   [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+10-10-2018T17:05:54.688 [restartedMain] HAPPYPOINT CURRENT INFO   [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@594c113: startup date [Wed Oct 10 17:05:54 EEST 2018]; root of context hierarchy
+10-10-2018T17:05:54.758 [background-preinit] HAPPYPOINT CURRENT INFO   [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+10-10-2018T17:05:56.037 [restartedMain] HAPPYPOINT CURRENT INFO   [PostProcessorRegistrationDelegate.java:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e167ee1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-10-2018T17:05:56.325 [restartedMain] HAPPYPOINT CURRENT INFO   [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+10-10-2018T17:05:56.332 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Starting service [Tomcat]
+10-10-2018T17:05:56.333 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-10-2018T17:05:56.429 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+10-10-2018T17:05:56.430 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1744 ms
+10-10-2018T17:05:56.670 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'metricsFilter' to: [/*]
+10-10-2018T17:05:56.671 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-10-2018T17:05:56.671 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-10-2018T17:05:56.671 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-10-2018T17:05:56.671 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+10-10-2018T17:05:56.672 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+10-10-2018T17:05:56.672 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+10-10-2018T17:05:56.672 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+10-10-2018T17:05:56.672 [localhost-startStop-1] HAPPYPOINT CURRENT INFO   [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+10-10-2018T17:05:56.705 [restartedMain] HAPPYPOINT CURRENT WARN   [AbstractApplicationContext.java:551] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+10-10-2018T17:05:56.706 [restartedMain] HAPPYPOINT CURRENT INFO   [DirectJDKLog.java:179] - Stopping service [Tomcat]
+10-10-2018T17:05:56.730 [restartedMain] HAPPYPOINT CURRENT INFO   [AutoConfigurationReportLoggingInitializer.java:101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10-10-2018T17:05:56.734 [restartedMain] HAPPYPOINT CURRENT ERROR  [LoggingFailureAnalysisReporter.java:42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
